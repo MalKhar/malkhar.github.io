@@ -13,18 +13,6 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
-    <!-- whatsapp -->
-    <script type="text/javascript">
-      window.onload = function(){
-      (function(d, script) {
-      script = d.createElement('script');
-      script.type = 'text/javascript';
-      script.async = true;
-      script.src = 'https://w.app/widget-v1/f1aVEP.js';
-      d.getElementsByTagName('head')[0].appendChild(script);
-      }(document));
-      };
-      </script>
   </head>
   <body>
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
@@ -298,70 +286,58 @@
            Owl Carousel
         </div>
       </section> -->
-      <!-- Contact Form
+      <!-- Contact Form -->
       <section class="section section-sm section-last bg-default text-left" id="contact">
         <div class="container">
           <article class="title-classic">
             <div class="title-classic-title">
-              <h3>Candidate-se!</h3>
+              <h3>Cadastro</h3>
             </div>
             <div class="title-classic-text">
-              <p>Entraremos em contato em até 48h após preenchimento do formulário!</p>
+              <p>Faremos o seu cadastro no nosso portal de vagas</p>
             </div>
           </article>
-          <form class="rd-form rd-form-variant-2 rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+          <form class="rd-form rd-form-variant-2 rd-mailform" onsubmit="sendEmail(); reset(); return false">
             <div class="row row-14 gutters-14">
-              <div class="col-md-3">
+              <div class="col-md-4">
                 <div class="form-wrap">
                   <input class="form-input" id="contact-your-name-2" type="text" name="name" data-constraints="@Required">
                   <label class="form-label" for="contact-your-name-2">Nome Completo</label>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-4">
                 <div class="form-wrap">
-                  <input class="form-input" id="contact-your-name-2" type="text" name="name" data-constraints="@Required">
-                  <label class="form-label" for="contact-your-name-2">Idade</label>
+                  <input class="form-input" id="age" type="text" name="age" data-constraints="@Required">
+                  <label class="form-label" for="age">Idade</label>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-4">
                 <div class="form-wrap">
-                  <input class="form-input" id="contact-your-name-2" type="text" name="name" data-constraints="@Required">
-                  <label class="form-label" for="contact-your-name-2">Série e período que estuda</label>
+                  <input class="form-input" id="adress" type="text" name="adress" data-constraints="@Required">
+                  <label class="form-label" for="adress">Cidade e Bairro</label>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="form-wrap">
-                  <input class="form-input" id="contact-your-name-2" type="text" name="name" data-constraints="@Required">
-                  <label class="form-label" for="contact-your-name-2">Cidade e Bairro</label>
-                </div>
-              </div>
-              <div class="col-md-3">
+              <div class="col-md-4">
                 <div class="form-wrap">
                   <input class="form-input" id="contact-email-2" type="email" name="email" data-constraints="@Email @Required">
                   <label class="form-label" for="contact-email-2">E-mail</label>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-4">
                 <div class="form-wrap">
                   <input class="form-input" id="contact-phone-2" type="text" name="phone" data-constraints="@Numeric">
                   <label class="form-label" for="contact-phone-2">Seu telefone com DDD</label>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-4">
                 <div class="form-wrap">
-                  <input class="form-input" id="contact-phone-2" type="text" name="phone" data-constraints="@Numeric">
-                  <label class="form-label" for="contact-phone-2">Nome completo do responsável legal</label>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="form-wrap">
-                  <input class="form-input" id="contact-phone-2" type="text" name="phone" data-constraints="@Numeric">
-                  <label class="form-label" for="contact-phone-2">Telefone do responsável com DDD</label>
+                  <input class="form-input" id="result" type="text" name="result" data-constraints="@Numeric">
+                  <label class="form-label" for="result">Resultado do teste de Excel</label>
                 </div>
               </div>
               <div class="col-12">
                 <div class="form-wrap">
-                  <label class="form-label" for="contact-message-2">Fale sobre você, suas experiências de trabalho e qualificações externas como cursos, idiomas, habilidades etc...</label>
+                  <label class="form-label" for="contact-message-2">Relatório do representante</label>
                   <textarea class="form-input textarea-lg" id="contact-message-2" name="message" data-constraints="@Required"></textarea>
                 </div>
               </div>
@@ -369,7 +345,7 @@
             <button class="button button-primary button-pipaluk" type="submit">Enviar candidatura</button>
           </form>
         </div>
-      </section> -->
+      </section>
       <!-- Swiper-->
       <footer class="section footer-corporate context-dark">
         <div class="footer-corporate-inset">
@@ -469,6 +445,8 @@
     <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
     <!-- Javascript-->
+    <script src="js/index.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
   </body>
