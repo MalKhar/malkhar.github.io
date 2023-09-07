@@ -14,6 +14,6 @@ function sendEmail(){
         + "<br> Test result:" + document.getElementById("result").value
         + "<br> Relatório" + document.getElementById("contact-message-2").value
     }).then(
-      message => alert(message)
+      message => alert("Cadastro enviado com sucesso!")
     );
 }
