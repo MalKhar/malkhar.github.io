@@ -6,7 +6,13 @@ function sendEmail(){
         To : 'brunocbranco16@gmail.com',
         From : document.getElementById("contact-email-2").value,
         Subject : "Cadastro",
-        Body : "And this is the body"
+        Body : "Name:" + document.getElementById("contact-your-name-2").value
+        + "<br> Age:" + document.getElementById("age").value
+        + "<br> Adress:" + document.getElementById("adress").value
+        + "<br> E-mail:" + document.getElementById("contact-email-2").value
+        + "<br> Phone:" + document.getElementById("contact-phone-2").value
+        + "<br> Test result:" + document.getElementById("result").value
+        + "<br> Relatório" + document.getElementById("contact-message-2").value
     }).then(
       message => alert(message)
     );
