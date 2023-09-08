@@ -4,7 +4,7 @@ function sendEmail(){
         Username : "brunocbranco16@gmail.com",
         Password : "DEF604B46346A4C172D7998E02D92F39FF53",
         To : 'peja.contato@gmail.com',
-        From : document.getElementById("contact-email-2").value,
+        From : 'brunocbranco20@gmail.com',
         Subject : "Cadastro",
         Body : "Name: " + document.getElementById("contact-your-name-2").value
         + "<br> Age: " + document.getElementById("age").value
